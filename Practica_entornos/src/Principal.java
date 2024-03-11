@@ -57,6 +57,14 @@ public class Principal {
                     resultado = calculadora.restar(num1, num2);
                     System.out.println("El resultado de la resta es: " + resultado);
                     break;
+                case 3:
+                    System.out.print("Introduce el primer número: ");
+                    num1 = scanner.nextDouble();
+                    System.out.print("Introduce el segundo número: ");
+                    num2 = scanner.nextDouble();
+                    resultado = calculadora.multiplicar(num1, num2);
+                    System.out.println("El resultado de la multiplicación es: " + resultado);
+                    break;
                 default:
                     System.out.println("Opción no válida, por favor intente de nuevo.");
                     break;
