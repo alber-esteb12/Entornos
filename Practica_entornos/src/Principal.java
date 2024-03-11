@@ -65,6 +65,17 @@ public class Principal {
                     resultado = calculadora.multiplicar(num1, num2);
                     System.out.println("El resultado de la multiplicación es: " + resultado);
                     break;
+                case 4:
+                    System.out.print("Introduce el primer número: ");
+                    num1 = scanner.nextDouble();
+                    System.out.print("Introduce el segundo número: ");
+                    num2 = scanner.nextDouble();
+                    resultado = calculadora.dividir(num1, num2);
+                    System.out.println("El resultado de la división es: " + resultado);
+                    break;
+                case 0:
+                    System.out.println("Saliendo de la calculadora.");
+                    break;
                 default:
                     System.out.println("Opción no válida, por favor intente de nuevo.");
                     break;
