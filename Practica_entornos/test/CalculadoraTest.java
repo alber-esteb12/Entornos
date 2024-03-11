@@ -25,4 +25,15 @@ class CalculadoraTest {
                 }
         );
     }
+
+    @Test
+    void multiplicar() {
+        assertAll(
+                () -> {
+                    assertEquals(2,1*2);
+                    assertEquals(1,1*1);
+                    assertEquals(8,4*2);
+                }
+        );
+    }
 }
