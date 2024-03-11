@@ -36,4 +36,15 @@ class CalculadoraTest {
                 }
         );
     }
+
+    @Test
+    void dividir() {
+        assertAll(
+                () -> {
+                    assertEquals(2,2/1);
+                    assertEquals(4,8/2);
+                    assertEquals(8,16/2);
+                }
+        );
+    }
 }
