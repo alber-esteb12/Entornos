@@ -31,6 +31,28 @@ public class Principal {
             System.out.println("0.- Salir");
             System.out.print("¿Qué opción quieres realizar?: ");
             opcion = scanner.nextInt();
+
+            switch (opcion) {
+                /**
+                 * En este switch haremos que dependiendo del numero que introduzca
+                 * el usuario se ejecute un caso u otro
+                 *
+                 * @param case cuando intriduzcan el numero que le hemos dado se
+                 *             ejecutara esa opcion
+                 * @param break termina el bucle
+                 */
+                case 1:
+                    System.out.print("Introduce el primer número: ");
+                    num1 = scanner.nextDouble();
+                    System.out.print("Introduce el segundo número: ");
+                    num2 = scanner.nextDouble();
+                    resultado = calculadora.sumar(num1, num2);
+                    System.out.println("El resultado de la suma es: " + resultado);
+                    break;
+                default:
+                    System.out.println("Opción no válida, por favor intente de nuevo.");
+                    break;
+            }
         }while (opcion != 0);
     }
 }
