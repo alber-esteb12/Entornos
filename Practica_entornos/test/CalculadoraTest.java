@@ -14,4 +14,15 @@ class CalculadoraTest {
                 }
         );
     }
+
+    @Test
+    void restar() {
+        assertAll(
+                () -> {
+                    assertEquals(1,2-1);
+                    assertEquals(0,1-1);
+                    assertEquals(2,4-2);
+                }
+        );
+    }
 }
