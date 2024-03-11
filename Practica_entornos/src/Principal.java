@@ -49,10 +49,19 @@ public class Principal {
                     resultado = calculadora.sumar(num1, num2);
                     System.out.println("El resultado de la suma es: " + resultado);
                     break;
+                case 2:
+                    System.out.print("Introduce el primer número: ");
+                    num1 = scanner.nextDouble();
+                    System.out.print("Introduce el segundo número: ");
+                    num2 = scanner.nextDouble();
+                    resultado = calculadora.restar(num1, num2);
+                    System.out.println("El resultado de la resta es: " + resultado);
+                    break;
                 default:
                     System.out.println("Opción no válida, por favor intente de nuevo.");
                     break;
             }
+
         }while (opcion != 0);
     }
 }
